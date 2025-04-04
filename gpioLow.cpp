@@ -12,13 +12,13 @@ void turnOnLED()
   directionFile.close();
 
   ofstream valueFile(path + "value");
-  valueFile << "1";
+  valueFile << "0";
   valueFile.close();
 }
 
 int main(){
-  cout << "Turning on LED with transistor" << endl;
+  cout << "Turning off LED with transistor" << endl;
   turnOnLED();
-  cout << "LED ON!" << endl;
+  cout << "LED OFF!" << endl;
   return 0;
 }
